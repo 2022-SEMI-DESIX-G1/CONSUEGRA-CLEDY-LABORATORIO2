@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <strong>
+            <h2>¿Qué es JavaScript y que se asemeja a Java?</h2>
+        </strong>
+        <p>
+            JavaScript es el único lenguaje de programación que funciona en los navegadores de forma nativa
+            (lenguaje interpretado sin necesidad de compilación). Por tanto se utiliza como complemento de HTML y CSS
+            para crear páginas web.
+        </p>
+        <p>
+            <b>Semejanza entre Java y JavaScript:</b> son dos lenguajes de programación. Una cosa que tienen en común es
+            que ambos son lenguajes
+            de programación C, esto significa que están estructurados de la misma manera. ... JavaScript es un lenguaje
+            interpretado, en otras palabras, se lee y traduce línea a línea al mismo tiempo que se ejecuta el programa.
+        </p>
+    </div>
+    <br>
+    <div>
+        <h1>Operaciones Matemáticas</h1>
+        Ingrese el primer valor: <br>
+        <input type="number" id="txtNum1" name="txtNum1">
+        <br>
+        Ingrese el primer valor: <br>
+        <input type="number" id="txtNum2" name="txtNum2">
+        <br>
+        Resultado : <br>
+        <input type="number" id="txtResultado" name="txtResultado">
+        
+        <br/><br/>
+
+        <input type="button" name="clickbtnSumar" value="Sumar" onclick="Sumar()">
+        <input type="button" name="clickbtnRestar" value="restar" onclick="Restar()">
+        <input type="button" name="clickbtnMultiplicar" value="Multiplicación" onclick="Multi()">
+        <input type="button" name="clickbtnDividir" value="Dividir" onclick="Dividir()">
+        <input type="button" name="clickbtnLimpiar" value="Limpiar Campos" onclick="Limpiar()">
+    </div>
+
+</body>
+<script>
+    function Sumar() {
+        var Num1= parseInt(document.getElementById("txtNum1").value);
+        var Num2 = parseInt(document.getElementById("txtNum2").value);
+        var resultado = Num1 + Num2;
+        console.log(resultado);
+        document.getElementById("txtResultado").value = resultado;
+
+    }
+
+    function Restar() {
+        var Num1= parseInt(document.getElementById("txtNum1").value);
+        var Num2 = parseInt(document.getElementById("txtNum2").value);
+        var resultado = Num1 - Num2;
+        console.log(resultado);
+        document.getElementById("txtResultado").value = resultado;
+
+    }
+
+    function Multi() {
+        var Num1= parseInt(document.getElementById("txtNum1").value);
+        var Num2 = parseInt(document.getElementById("txtNum2").value);
+        var resultado = Num1 * Num2;
+        console.log(resultado);
+        document.getElementById("txtResultado").value = resultado;
+
+    }
+
+    function Dividir() {
+        var Num1= parseInt(document.getElementById("txtNum1").value);
+        var Num2 = parseInt(document.getElementById("txtNum2").value);
+        var resultado = Num1 / Num2;
+        console.log(resultado);
+        document.getElementById("txtResultado").value = resultado;
+
+    }
+
+    function Limpiar() {
+        document.getElementById("txtNum1").value = "";
+        document.getElementById("txtNum2").value = "";
+        document.getElementById("txtResultado").value = "";
+
+    }
+
+    let let1 = 'Hello ';
+    let let2 = 'Work';
+    var res =  let1.concat(let2);
+    console.log(res);
+
+    const valor1 = true;
+    const valor2 = 'Hello World';
+    console.log('Tipo de variable: ' + typeof valor1);
+    console.log('Tipo de variable: ' + typeof valor2);
+
+    const objeto = {
+        entero: 3,
+        string: 'Texto',
+        bool: true,
+        obj: {}
+    }
+    console.log(objeto);
+</script>
+
+</html>
